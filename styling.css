@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: R1;
+  src: url(resources/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: R2;
+  src: url(resources/Roboto-ThinItalic.ttf);
+}
+
+.head {
+	display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 10px;
+	height: fit-content;
+	width: fit-content;
+	font-family: R2;
+	font-size: 22px;
+}
+
+#about:hover {
+cursor: pointer;
+color: rgba(235,235,235,1);
+}
+
+#skills:hover {
+cursor: pointer;
+color: rgba(235,235,235,1);
+}
+
+#projects:hover {
+cursor: pointer;
+color: rgba(235,235,235,1);
+}
+
+#socials:hover {
+cursor: pointer;
+color: rgba(235,235,235,1);
+}
+
+#contact:hover {
+cursor: pointer;
+color: rgba(235,235,235,1);
+}
+
+#title {
+	font-family: R2;
+	font-size: 70px;
+	/*text-transform: uppercase;*/
+}
+
+
+
+body {
+  margin: auto;
+  text-align: center;
+  background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(233, 150, 122) 55%, rgb(255, 240, 245) 110%);
+}
+
+#footer {
+	font-family: R2;
+	font-size: 15px;
+	text-align: left;
+	color: darkred; 
+}
+
+hr {
+  border: 1px solid black;
+}
+
+#A {
+	font-size: 100px;
+}
+
+} 
