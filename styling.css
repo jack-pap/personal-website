@@ -12,6 +12,12 @@
   src: url(resources/Roboto-ThinItalic.ttf);
 }
 
+#title {
+	font-family: R2;
+	font-size: 80px;
+	/*text-transform: uppercase;*/
+}
+
 .head {
 	display: flex;
   flex-direction: row;
@@ -28,33 +34,34 @@
 #about:hover {
 cursor: pointer;
 color: rgba(235,235,235,1);
+transition: color 0.3s;
 }
 
 #skills:hover {
 cursor: pointer;
 color: rgba(235,235,235,1);
+transition: color 0.3s;
 }
 
 #projects:hover {
 cursor: pointer;
 color: rgba(235,235,235,1);
+transition: color 0.3s;
 }
 
 #socials:hover {
 cursor: pointer;
 color: rgba(235,235,235,1);
+transition: color 0.3s;
 }
 
 #contact:hover {
 cursor: pointer;
 color: rgba(235,235,235,1);
+transition: color 0.3s;
 }
 
-#title {
-	font-family: R2;
-	font-size: 70px;
-	/*text-transform: uppercase;*/
-}
+
 
 
 
