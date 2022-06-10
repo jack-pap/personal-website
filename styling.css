@@ -2,29 +2,49 @@
 	box-sizing: border-box;
 }
 
+a {
+	color: unset;
+	text-decoration: unset;
+}
+
 @font-face {
-  font-family: R1;
-  src: url(resources/Roboto-Regular.ttf);
+	font-family: R1;
+	src: url(resources/Roboto-Regular.ttf);
 }
 
 @font-face {
 	font-family: R2;
-  src: url(resources/Roboto-ThinItalic.ttf);
+	src: url(resources/Roboto-ThinItalic.ttf);
 }
 
 #title {
 	font-family: R2;
 	font-size: 80px;
-	/*text-transform: uppercase;*/
+	padding-top: 240px;
+	margin-bottom: 15px;
+	text-align: center;
+	animation: moveDown 0.95s linear 1;
+}
+
+@keyframes moveDown {
+	0% {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0px);
+		opacity: 100%;
+	}
+	
 }
 
 .head {
 	display: flex;
-  flex-direction: row;
-  align-content: flex-end;
-  margin-left: auto;
-  margin-right: auto;
-  text-indent: 10px;
+	align-content: flex-end;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: 10px;
 	height: fit-content;
 	width: fit-content;
 	font-family: R2;
@@ -32,59 +52,119 @@
 }
 
 #about:hover {
-cursor: pointer;
-color: rgba(235,235,235,1);
-transition: color 0.3s;
+	cursor: pointer;
+	color: rgba(235, 235, 235, 1);
+	transition: color 0.3s;
 }
 
 #skills:hover {
-cursor: pointer;
-color: rgba(235,235,235,1);
-transition: color 0.3s;
+	cursor: pointer;
+	color: rgba(235, 235, 235, 1);
+	transition: color 0.3s;
 }
 
 #projects:hover {
-cursor: pointer;
-color: rgba(235,235,235,1);
-transition: color 0.3s;
+	cursor: pointer;
+	color: rgba(235, 235, 235, 1);
+	transition: color 0.3s;
 }
 
 #socials:hover {
-cursor: pointer;
-color: rgba(235,235,235,1);
-transition: color 0.3s;
+	cursor: pointer;
+	color: rgba(235, 235, 235, 1);
+	transition: color 0.3s;
 }
 
 #contact:hover {
-cursor: pointer;
-color: rgba(235,235,235,1);
-transition: color 0.3s;
+	cursor: pointer;
+	color: rgba(235, 235, 235, 1);
+	transition: color 0.3s;
 }
-
-
-
-
 
 body {
-  margin: auto;
-  text-align: center;
-  background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(233, 150, 122) 55%, rgb(255, 240, 245) 110%);
+	text-align: center;
+	font-family: R2;
+	font-size: 40px;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) -5%, rgb(233, 140, 122) 60%, rgb(255, 240, 245) 115%);
 }
+
+
+#aboutSection {
+	transition: color 1s, transform 0.45s;
+	display: flex;
+	padding: 40px;
+	margin: auto;
+	max-width: max-content;
+}
+
+
+#aboutSection:hover {
+	color: rgba(235, 235, 235, 1);
+	transform: rotate(360deg);
+}
+
+#skillsSection {
+	transition: color 1s, transform 0.45s;
+	padding: 40px;
+	margin: auto;
+	max-width: max-content;
+}
+
+#skillsSection:hover {
+	color: rgba(235, 235, 235, 1);
+	transform: rotate(-360deg);
+}
+
+#projectsSection {
+	transition: color 1s, transform 0.45s;
+	padding: 40px;
+	margin: auto;
+	max-width: max-content;
+}
+
+#projectsSection:hover {
+	color: rgba(235, 235, 235, 1);
+	transform: rotate(360deg);
+}
+
+#socialsSection {
+	transition: color 1s, transform 0.45s;
+	padding: 40px;
+	margin: auto;
+	max-width: max-content;
+}
+
+#socialsSection:hover {
+	color: rgba(235, 235, 235, 1);
+	transform: rotate(-360deg);
+}
+
+#contactSection {
+	transition: color 1s, transform 0.45s;
+	padding: 40px;
+	margin: auto;
+	max-width: max-content;
+}
+
+#contactSection:hover {
+	color: rgba(235, 235, 235, 1);
+	transform: rotate(360deg);
+}
+
+
 
 #footer {
 	font-family: R2;
-	font-size: 15px;
+	font-size: 12px;
 	text-align: left;
-	color: darkred; 
+	color: rgb(255, 251, 251);
 }
 
 hr {
-  border: 1px solid black;
+	border: 1px solid black;
 }
 
 #A {
 	font-size: 100px;
 }
-
-} 
